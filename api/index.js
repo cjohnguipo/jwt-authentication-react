@@ -4,6 +4,11 @@ const app = express();
 
 app.use(express.json());
 
+
+app.get('/', (req, res) => {
+  res.send('Hey this is my API running 🥳')
+})
+
 app.use("/auth", require("./routes/auth"));
 app.use("/posts", require("./routes/posts"));
 

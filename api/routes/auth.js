@@ -87,21 +87,21 @@ router.get("/users", (req, res) => {
 // Log in
 router.post("/login", async (req, res) => {
   const { email, password } = req.body;
-
   // Look for user email in the database
   let user = users.find((user) => {
     return user.email === email;
   });
-
+ 
   // If user not found, send error message
   if (!user) {
     return res.status(400).json({
       errors: [
         {
-          msg: "Invalid credentials",
+          msg: "Invalid credentials ",
         },
       ],
     });
+
   }
 
   // Compare hased password with user password to see if they are valid

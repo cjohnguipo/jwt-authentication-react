@@ -1,11 +1,15 @@
 const users = [
   {
     email: "john@gmail.com",
-    password: "random",
+    password: "$2b$10$jgt7BKM3nsIrqNPLFTZ6GOb.m/qpbiBxTEZBFrWYYRn.lIG3jpfWy",
   },
   {
-    email: "jack@gmail.com",
-    password: "JackPassword",
+    "email": "tope@gmail.com",
+    "password": "$2b$10$DKv6BIxW3952AYgsWIYV5O1QIQZh0snsgUT53iVoXcuFzWDIWS2Iq"
+  },
+  {
+    "email": "cjohnguipo@gmail.com",
+    "password": "$2b$10$jgt7BKM3nsIrqNPLFTZ6GOb.m/qpbiBxTEZBFrWYYRn.lIG3jpfWy"
   },
 ];
 

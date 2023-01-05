@@ -12,9 +12,11 @@ const signup = (email, password) => {
       if (response.data.accessToken) {
         localStorage.setItem("user", JSON.stringify(response.data));
       }
-
       return response.data;
-    });
+    }) 
+    .catch(error => {
+      console.log(error.response.data.error)
+   });
 };
 
 const login = (email, password) => {
